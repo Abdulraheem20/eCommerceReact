@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Bai+Jamjuree:wght@400;600&family=Barlow+Semi+Condensed:wght@500;600&family=Cairo:wght@600&family=Crimson+Text&family=Dancing+Script:wght@700&family=Josefin+Sans:wght@400;700&family=Kumbh+Sans:wght@500;700&family=La+Belle+Aurore&family=Public+Sans:wght@300;400;700&family=Red+Hat+Text:wght@700&family=Roboto:wght@500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Bai+Jamjuree:wght@400;600&family=Barlow+Semi+Condensed:wght@500;600&family=Cairo:wght@600&family=Crimson+Text&family=Dancing+Script:wght@700&family=Josefin+Sans:wght@400;700&family=Kumbh+Sans:wght@500;700&family=La+Belle+Aurore&family=Lato&family=Public+Sans:wght@300;400;700&family=Red+Hat+Text:wght@700&family=Roboto:wght@500&display=swap");
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #0d0e43;
+  color: #8a8fb9;
+  padding: 50px;
+}
+.theShop h1 {
+  font-family: "Crimson Text", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+  color: white;
+}
+.shop {
+  color: #8568ff;
+}
+.followUs a {
+  justify-content: space-around;
+}
+.email .signUpBtn {
+  padding: 11px;
+  border: none;
+  background-color: #8568ff;
+  border-radius: 5px;
+  position: absolute;
+  left: 312px;
+}
+.emailInput {
+  padding: 10px;
+  width: 250px;
+
+  border-radius: 5px;
+}
