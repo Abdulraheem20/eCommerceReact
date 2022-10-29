@@ -13,6 +13,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  color: #0D0E43;
 }
 .row {
   display: flex;
@@ -38,9 +39,15 @@
   display: flex;
   gap: 30px;
   margin-top: 10px;
+  
+}
+.navLinks li{
+  color: #0D0E43;
+  
 }
 .icons {
   display: flex;
+  color: #0D0E43;
   gap: 10px;
   margin: 15px 20px;
   position: absolute;
@@ -55,6 +62,7 @@
   margin-top: 10px;
   height: 25px;
   width: 200px;
+  border: none;
 }
 .input button {
   background: none;
@@ -62,4 +70,7 @@
   position: absolute;
   top: 15px;
   right: 10px;
+}
+.NavLink{
+  text-decoration: none;
 }
