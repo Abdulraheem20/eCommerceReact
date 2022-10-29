@@ -42,17 +42,7 @@ const ShowLogin = () => {
                   }}
                 />
               </div>
-              {/* <div className="container1">
-                <label htmlFor="email">Repeat Password</label>
-                <input
-                  type="password"
-                  className="mailInput"
-                  value={data.password}
-                  onChange={(e) => {
-                    setData({ ...data, password: e.target.value });
-                  }}
-                />
-              </div> */}
+            
               <small className='forgetPassword'>Forgot your password?</small> <br /> <br />
               <button
                 className="submitBtn"

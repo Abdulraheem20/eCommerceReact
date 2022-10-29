@@ -27,13 +27,13 @@ const Navbarr = () => {
                     <NavLink to="/products" style={{textDecoration: 'none'}}>Products</NavLink>
                   </li>
                   <li className="nav-link">
-                    <NavLink to="/products" style={{textDecoration: 'none'}}>Blog</NavLink>
+                    <NavLink to="/blog" style={{textDecoration: 'none'}}>Blog</NavLink>
                   </li>
                   <li className="nav-link">
-                    <NavLink to="/products" style={{textDecoration: 'none'}}>Shop</NavLink>
+                    <NavLink to="/shop" style={{textDecoration: 'none'}}>Shop</NavLink>
                   </li>
                   <li className="nav-link">
-                    <NavLink to="/products" style={{textDecoration: 'none'}}>Contact</NavLink>
+                    <NavLink to="/contact" style={{textDecoration: 'none'}}>Contact</NavLink>
                   </li>
                 </ul>
               </div>

@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.headerBg {
+  display: flex;
+  justify-content: space-around;
+  background-color: #8568ff;
+  height: 460px;
+  z-index: 1;
+}
+.leftLayer {
+  position: absolute;
+  top: 175px;
+  right: 230px;
+  width: 400px;
+}
+.rightLayer {
+  width: 400px;
+  position: absolute;
+  top: 169px;
+  right: 180px;
+}
+.pics {
+  width: 350px;
+  position: absolute;
+  top: 162px;
+  right: 230px;
+  z-index: 1;
+}
+.col .h3 {
+  color: white;
+  position: absolute;
+  top: 230px;
+  /* left: 200px; */
+  margin-right: 150px;
+  margin-left: 100px;
+}
