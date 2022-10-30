@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.colContainer {
+  display: flex;
+  margin: 100px 50px;
+  justify-content: space-around;
+  gap: 30px;
+  line-height: 1.5rem;
+  /* font-family: Lato; */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  /* text-align: center; */
+}
+.divContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  box-shadow: 1px 2px 3px;
+  border-radius: 10px;
+  margin: 20px 100px 50px 100px;
+}
+.imgs {
+  width: 200px;
+  height: 150px;
+  margin: 5px;
+}
+.price-Rating {
+  display: flex;
+  gap: 50px;
+  margin: 5px 0;
+}
+.lists {
+  margin: 5px;
+}
+.text {
+  margin: 10px 0;
+}
+.col1 {
+  margin: 20px 50px;
+}
+.checkbox {
+  margin-right: 5px;
+}
+.icon {
+  display: flex;
+  gap: 30px;
+}
+.cont p {
+  color: #151875;
+}
+.cont label {
+  color: #7e81a2;
+}
+
+.ratingLabel {
+  position: relative;
+  cursor: pointer;
+}
+/* .rating:checked{
+    background-color: #FFCC2E;
+    border-radius: 10px;
+} */
