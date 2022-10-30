@@ -26,6 +26,10 @@
   height: 150px;
   margin: 5px;
 }
+.cont{
+  display: flex;
+  gap: 5px;
+}
 .price-Rating {
   display: flex;
   gap: 50px;

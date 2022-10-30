@@ -4,6 +4,7 @@ import "../styles/Shop.css";
 import Checkbox from "../Checkbox";
 import DisplayShop from "../DisplayShop";
 import Goods from "../AvailableProducts";
+import StarRate from "../Star";
 
 
 const ShowGoods = (itr, id) => {
@@ -45,38 +46,24 @@ const Shop = () => {
         <div className="ratings">
           <p>Rating Item</p>
           <div className="cont">
-            <input type="checkbox" className="rating" />
-            <label htmlFor="checkbox" className="ratingLabel">
-              <CiStar /> <CiStar /> <CiStar /> <CiStar /> <CiStar />
-            </label>
+          <StarRate/>
             <small style={{ fontSize: 12, display: "inline" }}>(233)</small>
           </div>
           <div className="cont">
-            <input type="checkbox" className="rating" />
-            <label htmlFor="checkbox" className="ratingLabel">
-              <CiStar /> <CiStar /> <CiStar /> <CiStar /> <CiStar />
-            </label>
+            <StarRate/>
+           
             <small style={{ fontSize: 12, display: "inline" }}>(233)</small>
           </div>
           <div className="cont">
-            <input type="checkbox" className="rating" />
-            <label htmlFor="checkbox" className="ratingLabel">
-              <CiStar /> <CiStar /> <CiStar /> <CiStar /> <CiStar />
-            </label>
+          <StarRate/>
             <small style={{ fontSize: 12, display: "inline" }}>(233)</small>
           </div>
           <div className="cont">
-            <input type="checkbox" className="rating" />
-            <label htmlFor="checkbox" className="ratingLabel">
-              <CiStar /> <CiStar /> <CiStar /> <CiStar /> <CiStar />
-            </label>
+          <StarRate/>
             <small style={{ fontSize: 12, display: "inline" }}>(233)</small>
           </div>
           <div className="cont">
-            <input type="checkbox" className="rating" />
-            <label htmlFor="checkbox" className="ratingLabel">
-              <CiStar /> <CiStar /> <CiStar /> <CiStar /> <CiStar />
-            </label>
+          <StarRate/>
             <small style={{ fontSize: 12, display: "inline" }}>(233)</small>
           </div>
         </div>
