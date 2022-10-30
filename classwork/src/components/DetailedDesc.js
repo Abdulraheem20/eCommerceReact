@@ -1,3 +1,4 @@
+import Goods from "../components/AvailableProducts";
 import React, { useState } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import "./styles/DetailedDesc.css";
@@ -7,7 +8,6 @@ import { CiStar } from "react-icons/ci";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaTwitterSquare } from "react-icons/fa";
-import Goods from "../AvailableProducts";
 
 const DetailedDesc = () => {
     const {id} = useParams()
@@ -162,9 +162,9 @@ const DetailedDesc = () => {
         </div>
         <div  className={detail? 'texts': 'hidden'}>
           <h3 >{itr.title}</h3> <br />
-          <p>{itr.description.desc}</p> <br />
-          <h3 >{itr.description.heading}</h3> <br />
-          <p>{itr.description.moreDetails}</p>
+          <p>{itr.desc}</p> <br />
+          <h3 >{itr.heading}</h3> <br />
+          <p>{itr.moreDetails}</p>
           <br />
         </div> <br />
       </div>
