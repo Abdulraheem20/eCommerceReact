@@ -1,5 +1,5 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState } from "react";
+import { NavLink, useParams } from "react-router-dom";
 import "./styles/DetailedDesc.css";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { FaRegHeart } from "react-icons/fa";
@@ -7,12 +7,30 @@ import { CiStar } from "react-icons/ci";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaTwitterSquare } from "react-icons/fa";
+import Goods from "../AvailableProducts";
 
 const DetailedDesc = () => {
+    const {id} = useParams()
+    const itr = Goods[id]
+    const [show, setShow] = useState(false);
+    const [detail, setDetail] = useState(false)
+
+  const showHandler = () => {
+    setShow(!show);
+  };
+  const showDetails = () => {
+    setDetail(!detail);
+  };
+  const [data, setData] = useState({
+    name: "",
+    rating: '',
+    msg: "",
+  });
+  
   return (
-    <div>
-      <div className="container1">
-        <div className="links">
+    <div >
+      <div className="container1"> <br /> <br />
+        <div className="linksss">
           <NavLink to="/" style={{ textDecoration: "none" }} className="linkss">
             Home
           </NavLink>
@@ -30,16 +48,17 @@ const DetailedDesc = () => {
         <div className="displayGood">
           <div className="left">
             <div className="smallImg">
-              <img src="../images/Rectangle 134.png" alt="img" />
-              <img src="../images/Rectangle 136.png" alt="img" />
-              <img src="../images/Rectangle 137.png" alt="img" />
+              <img src={itr.img} alt="img" 
+             />
+              <img src={itr.img} alt="img" />
+              <img src={itr.img} alt="img" />
             </div>
             <div className="bigImg">
-              <img src="../images/Rectangle 138.png" alt="img" />
+              <img src={itr.img} alt="img" />
             </div>
           </div>
           <div className="right">
-            <h3>Playwood arm chair</h3> <br />
+            <h3>{itr.title}</h3> <br />
             <div className="ratingReview">
               <div>
                 <CiStar />
@@ -51,12 +70,14 @@ const DetailedDesc = () => {
                   <small>(22)</small>
                 </span>
               </div> <br />
-              <button>Add Review</button>
+              <button onClick={(e)=>{
+                e.preventDefault()
+                showHandler()
+              }}>Add Review</button>
             </div>
-            <p>€32.00</p> <br />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              tellus porttitor purus, et volutpat sit.
+            <p style={{color: '#151875',}}>{itr.price}</p> <br />
+            <p style={{color: '##A9ACC6',}}>
+              {itr.briefDesc}
             </p> <br />
             <div className="btns">
               <button className="AddCartBtn">
@@ -66,9 +87,9 @@ const DetailedDesc = () => {
                 <FaRegHeart /> Favorite
               </button>
             </div> <br />
-            <h5>Categories: furniture, wood</h5>
+            <h5  style={{color: '#151875',}}>Categories: furniture, wood</h5>
             <div className="share">
-              <p>Share</p>
+              <h5 style={{color: '#151875',}}>Share</h5>
               <span>
                 <a href="">
                   <FaFacebookSquare style={{ color: "#151875" }} />
@@ -87,6 +108,65 @@ const DetailedDesc = () => {
             </div>
           </div>
         </div>
+      <div className={show? 'reviewModal':'hidden'}>
+        <h2>Add review</h2>
+        <div className="inputName">
+            <label htmlFor="name">Name</label>
+            <input type="text" className="inputN" value={data.name}
+              onChange={(e) => {
+                setData({ ...data, name: e.target.value });
+              }}/>
+        </div>
+        <div className="inputName">
+            <label htmlFor="rating">Rating</label>
+            <span><CiStar /><CiStar /><CiStar /><CiStar /><CiStar /></span>
+        </div>
+        <div className="inputName">
+            <label htmlFor="rating">Rating</label>
+            <textarea name="review" id="" cols="30" rows="10" value={data.msg}
+              onChange={(e) => {
+                setData({ ...data, msg: e.target.value });
+              }}>Review</textarea>
+        </div>
+        <div className="subCloseBtn">
+        <button className="subBtn" 
+        onClick={(e)=>{
+            e.preventDefault()
+            console.log(`Name: ${data.name}; Message: ${data.msg}`)
+            showHandler()
+        }}>Submit</button>
+        <button className="closeBtn" 
+        onClick={(e)=>{
+            e.preventDefault()
+            showHandler()
+        }}>Close</button>
+        </div>
+      </div> <br />
+      </div>
+      <div className="container2">
+        <div className="links1">
+          <h3 className={detail? 'links1h3': 'none'}
+          onClick={()=>{
+            showDetails()
+            
+          }}>Description</h3>
+          <h3 
+          className={detail? 'links1h3': 'none'}
+          onClick={()=>{
+            showDetails()
+          }}>Additional Info</h3>
+          <h3 className={detail? 'links1h3': 'none'} 
+          onClick={()=>{
+            showDetails()
+          }}>Reviews</h3>
+        </div>
+        <div  className={detail? 'texts': 'hidden'}>
+          <h3 >{itr.title}</h3> <br />
+          <p>{itr.description.desc}</p> <br />
+          <h3 >{itr.description.heading}</h3> <br />
+          <p>{itr.description.moreDetails}</p>
+          <br />
+        </div> <br />
       </div>
     </div>
   );

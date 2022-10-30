@@ -3,7 +3,8 @@ import { CiStar } from "react-icons/ci";
 import "../styles/Shop.css";
 import Checkbox from "../Checkbox";
 import DisplayShop from "../DisplayShop";
-import Goods from "../AvailableProducts";
+import Goods from "../";
+
 
 const ShowGoods = (itr, id) => {
   return (

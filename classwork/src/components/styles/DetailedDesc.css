@@ -3,74 +3,152 @@
   margin: 0;
   box-sizing: border-box;
 }
-.container1{
-    background-color: white;
-}
-.links {
-  display: flex;
-  gap: 20px;
-  font-size: 18px;
-}
-.linkss:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
-}
-.linkss:active {
-  color: green;
-  background-color: transparent;
-  text-decoration: underline;
-}
-.displayGood{
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin: 50px 150px;
-}
-.left{
-    display: flex;
-    gap: 10px;
-}
-.smallImg{
-    display: grid;
-}
-.right{
-    margin: 100px 100px 100px 30px;
-}
-.bigImg img{
-    width: 350px;
-    height: 470px;
-}
-.smallImg img{
-    width: 120px;
-}
-.share p{
-    display: inline;
-}
-.share{
-    display: flex;
-    gap: 30px;  
-    margin: 10px 0; 
-}
-.btns{
-    display: flex;
-    gap: 30px;
-}
-.btns button, .ratingReview button{
-    border-radius: 10px;
-    padding: 5px 20px;
-    cursor: pointer;
-}
-.ratingReview{
-    display: flex;
-    gap: 20px;
-}
-.ratingReview button, .FavoriteBtn{
-    background-color: transparent;
-    border: 1px solid #1D3178;
-}
-.AddCartBtn{
-    background-color: #FF3EB2;
-    color: #ffffff;
-    border: none;
+@media only screen and (min-width: 1000px){
+    .container1{
+        background-color: white;
+    }
+    .linksss {
+      display: flex;
+      gap: 20px;
+      font-size: 18px;
+      margin: 20px 100px;
+    }
+    .linkss:hover {
+      color: red;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    .linkss:active {
+      color: green;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    .displayGood{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin: 50px 100px;
+    }
+    .left{
+        display: flex;
+        gap: 10px;
+    }
+    .smallImg{
+        display: grid;
+    }
+    .right{
+        margin: 100px 100px 100px 30px;
+    }
+    .bigImg img{
+        /* width: 300px; */
+        height: 495px;
+    }
+    /* .smallImg img{
+        width: 150px;
+        height: 151px;
+    } */
+    .share p{
+        display: inline;
+    }
+    .share{
+        display: flex;
+        gap: 30px;  
+        margin: 10px 0; 
+    }
+    .btns{
+        display: flex;
+        gap: 30px;
+    }
+    .btns button, .ratingReview button{
+        border-radius: 10px;
+        padding: 5px 20px;
+        cursor: pointer;
+    }
+    .ratingReview{
+        display: flex;
+        gap: 20px;
+    }
+    .ratingReview button, .FavoriteBtn{
+        background-color: transparent;
+        border: 1px solid #1D3178;
+    }
+    .AddCartBtn{
+        background-color: #FF3EB2;
+        color: #ffffff;
+        border: none;
+    }
+    .reviewModal{
+        display: block;
+        background-color: white;
+        position: absolute;
+        top: 650px;
+        right: 300px;
+        padding: 20px 50px;
+        border-radius: 10px;
+        box-shadow: 1px 2px 3px;
+    }
+    .hidden{
+        display: none;
+    }
+    .inputName{
+        display: grid;
+        margin: 20px 0px;
+    }
+    .inputName input{
+        height: 30px;
+        border-radius: 10px;
+        border: 1px solid #C2C5E1;
+    }
+    .inputName textarea{
+        border-radius: 10px;
+        border: 1px solid #C2C5E1;
+
+    }
+    .inputName label{
+        margin: 10px 0px;
+    }
+    .subCloseBtn{
+        display: flex;
+        justify-content: space-between;
+    }
+    .subBtn, .closeBtn{
+        border-radius: 10px;
+        padding: 5px 20px;
+        cursor: pointer;
+        border: 1px solid #1D3178;
+        background-color: green;
+    }
+    .closeBtn{
+        background-color: red;
+
+    }
+    .container2{
+        background-color: #F9F8FE;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        margin: 0px auto;
+        display: block;
+
+    }
+    .links1{
+        display: flex;
+        gap: 50px;
+        margin: 20px 0px;
+        cursor: pointer;
+    }
+    .links1 h3, .texts h3{
+        color: #151875;
+    }
+    .texts p{
+        color: #A9ACC6;
+        display: block;
+    }
+    .links1h3{
+        text-decoration: underline;
+
+    }
+    /* .Description{
+        display: block;
+    } */
 }
