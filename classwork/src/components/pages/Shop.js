@@ -1,12 +1,29 @@
 import React from "react";
 import { CiStar } from "react-icons/ci";
-import { AiOutlineShoppingCart } from "react-icons/ai";
-import { FaRegHeart } from "react-icons/fa";
-import { FaSearchPlus } from "react-icons/fa";
 import "../styles/Shop.css";
-import image1 from "../pages/Rectangle 32.png";
 import Checkbox from "../Checkbox";
+import DisplayShop from "../DisplayShop";
+import Goods from "../AvailableProducts";
 
+const ShowGoods = (itr, id) => {
+  return (
+    <DisplayShop
+      title={itr.title}
+      price={itr.price}
+      rating={itr.rating}
+      briefDesc={itr.briefDesc}
+      key={id}
+      id={id}
+      icon1={itr.icon1}
+      icon2={itr.icon2}
+      icon3={itr.icon3}
+      img={itr.img}
+    />
+  );
+};
+const images = (itr, id) => {
+  return <DisplayShop id={id} key={id} />;
+};
 const Shop = () => {
   return (
     <div className="colContainer">
@@ -31,35 +48,35 @@ const Shop = () => {
             <label htmlFor="checkbox" className="ratingLabel">
               <CiStar /> <CiStar /> <CiStar /> <CiStar /> <CiStar />
             </label>
-            <small style={{fontSize: 12,display: 'inline'}} >(233)</small>
+            <small style={{ fontSize: 12, display: "inline" }}>(233)</small>
           </div>
           <div className="cont">
             <input type="checkbox" className="rating" />
             <label htmlFor="checkbox" className="ratingLabel">
               <CiStar /> <CiStar /> <CiStar /> <CiStar /> <CiStar />
             </label>
-            <small style={{fontSize: 12,display: 'inline'}} >(233)</small>
+            <small style={{ fontSize: 12, display: "inline" }}>(233)</small>
           </div>
           <div className="cont">
             <input type="checkbox" className="rating" />
             <label htmlFor="checkbox" className="ratingLabel">
               <CiStar /> <CiStar /> <CiStar /> <CiStar /> <CiStar />
             </label>
-            <small style={{fontSize: 12,display: 'inline'}} >(233)</small>
+            <small style={{ fontSize: 12, display: "inline" }}>(233)</small>
           </div>
           <div className="cont">
             <input type="checkbox" className="rating" />
             <label htmlFor="checkbox" className="ratingLabel">
               <CiStar /> <CiStar /> <CiStar /> <CiStar /> <CiStar />
             </label>
-            <small style={{fontSize: 12,display: 'inline'}} >(233)</small>
+            <small style={{ fontSize: 12, display: "inline" }}>(233)</small>
           </div>
           <div className="cont">
             <input type="checkbox" className="rating" />
             <label htmlFor="checkbox" className="ratingLabel">
               <CiStar /> <CiStar /> <CiStar /> <CiStar /> <CiStar />
             </label>
-            <small style={{fontSize: 12,display: 'inline'}} >(233)</small>
+            <small style={{ fontSize: 12, display: "inline" }}>(233)</small>
           </div>
         </div>
         <br /> <br />
@@ -91,133 +108,7 @@ const Shop = () => {
           </div>
         </div>
       </div>
-      <div className="col2">
-        <div className="divContainer">
-          <div className="divLeft">
-            <img src={image1} alt="image" className="imgs" />
-          </div>
-          <div className="divRight">
-            <div className="lists">
-              <h4>Dictum morbi</h4>
-              <div className="price-Rating">
-                <span>€26.00</span>
-                <span>
-                  <CiStar /> <CiStar /> <CiStar /> <CiStar /> <CiStar />
-                </span>
-              </div>
-              <div className="text">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna
-                  in est <span></span>
-                </p>
-              </div>
-              <div className="icon">
-                <AiOutlineShoppingCart /> <FaRegHeart /> <FaSearchPlus />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="divContainer">
-          <div className="divLeft">
-            <img src={image1} alt="image" className="imgs" />
-          </div>
-          <div className="divRight">
-            <div className="lists">
-              <h4>Dictum morbi</h4>
-              <div className="price-Rating">
-                <span>€26.00</span>
-                <span>
-                  <CiStar /> <CiStar /> <CiStar /> <CiStar /> <CiStar />
-                </span>
-              </div>
-              <div className="text">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna
-                  in est <span></span>
-                </p>
-              </div>
-              <div className="icon">
-                <AiOutlineShoppingCart /> <FaRegHeart /> <FaSearchPlus />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="divContainer">
-          <div className="divLeft">
-            <img src={image1} alt="image" className="imgs" />
-          </div>
-          <div className="divRight">
-            <div className="lists">
-              <h4>Dictum morbi</h4>
-              <div className="price-Rating">
-                <span>€26.00</span>
-                <span>
-                  <CiStar /> <CiStar /> <CiStar /> <CiStar /> <CiStar />
-                </span>
-              </div>
-              <div className="text">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna
-                  in est <span></span>
-                </p>
-              </div>
-              <div className="icon">
-                <AiOutlineShoppingCart /> <FaRegHeart /> <FaSearchPlus />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="divContainer">
-          <div className="divLeft">
-            <img src={image1} alt="image" className="imgs" />
-          </div>
-          <div className="divRight">
-            <div className="lists">
-              <h4>Dictum morbi</h4>
-              <div className="price-Rating">
-                <span>€26.00</span>
-                <span>
-                  <CiStar /> <CiStar /> <CiStar /> <CiStar /> <CiStar />
-                </span>
-              </div>
-              <div className="text">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna
-                  in est <span></span>
-                </p>
-              </div>
-              <div className="icon">
-                <AiOutlineShoppingCart /> <FaRegHeart /> <FaSearchPlus />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="divContainer">
-          <div className="divLeft">
-            <img src={image1} alt="image" className="imgs" />
-          </div>
-          <div className="divRight">
-            <div className="lists">
-              <h4>Dictum morbi</h4>
-              <div className="price-Rating">
-                <span>€26.00</span>
-                <span>
-                  <CiStar /> <CiStar /> <CiStar /> <CiStar /> <CiStar />
-                </span>
-              </div>
-              <div className="text">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna
-                  in est <span></span>
-                </p>
-              </div>
-              <div className="icon">
-                <AiOutlineShoppingCart /> <FaRegHeart /> <FaSearchPlus />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div className="col2">{Goods.map(ShowGoods)}</div>
     </div>
   );
 };
