@@ -25,7 +25,7 @@ const DisplayShop = ({
           <div className="price-Rating">
       <span>{price}</span>
       <span>
-        {rating} {rating} {rating} {rating} {rating}
+        {rating} 
       </span>
 
           </div>

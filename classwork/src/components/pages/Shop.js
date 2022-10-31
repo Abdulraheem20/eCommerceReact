@@ -23,9 +23,9 @@ const ShowGoods = (itr, id) => {
     />
   );
 };
-const images = (itr, id) => {
-  return <DisplayShop id={id} key={id} />;
-};
+// const images = (itr, id) => {
+//   return <DisplayShop id={id} key={id} />;
+// };
 const Shop = () => {
   return (
     <div className="colContainer">
@@ -46,23 +46,28 @@ const Shop = () => {
         <div className="ratings">
           <p>Rating Item</p>
           <div className="cont">
+            <input type="checkbox" className="checkbox" />
           <StarRate/>
             <small style={{ fontSize: 12, display: "inline" }}>(233)</small>
           </div>
           <div className="cont">
+            <input type="checkbox" className="checkbox" />
             <StarRate/>
            
             <small style={{ fontSize: 12, display: "inline" }}>(233)</small>
           </div>
           <div className="cont">
+            <input type="checkbox" className="checkbox" />
           <StarRate/>
             <small style={{ fontSize: 12, display: "inline" }}>(233)</small>
           </div>
           <div className="cont">
+            <input type="checkbox" className="checkbox" />
           <StarRate/>
             <small style={{ fontSize: 12, display: "inline" }}>(233)</small>
           </div>
           <div className="cont">
+            <input type="checkbox" className="checkbox" />
           <StarRate/>
             <small style={{ fontSize: 12, display: "inline" }}>(233)</small>
           </div>

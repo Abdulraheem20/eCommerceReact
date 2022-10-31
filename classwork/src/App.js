@@ -19,7 +19,7 @@ function App() {
       <Router>
         <Navbarr />
         <Header />
-        <Suspense fallback={<h1>loading...</h1>} />
+        <Suspense fallback={<h1>loading...</h1>} >
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/products" element={<Product />} />
@@ -29,6 +29,7 @@ function App() {
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/Shop/:id" element={<Detailed/>}/>
         </Routes>
+        </Suspense>
         <Footer />
       </Router>
     </div>

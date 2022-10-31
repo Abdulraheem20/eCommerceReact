@@ -2,9 +2,10 @@ import Goods from "../components/AvailableProducts";
 import React, { useState } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import "./styles/DetailedDesc.css";
+import StarRate from "./Star";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { FaRegHeart } from "react-icons/fa";
-import { CiStar } from "react-icons/ci";
+
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaTwitterSquare } from "react-icons/fa";
@@ -25,6 +26,7 @@ const DetailedDesc = () => {
     name: "",
     rating: '',
     msg: "",
+    key: {id},
   });
   
   return (
@@ -61,11 +63,7 @@ const DetailedDesc = () => {
             <h3>{itr.title}</h3> <br />
             <div className="ratingReview">
               <div>
-                <CiStar />
-                <CiStar />
-                <CiStar />
-                <CiStar />
-                <CiStar />
+              <StarRate/>
                 <span>
                   <small>(22)</small>
                 </span>
@@ -119,7 +117,12 @@ const DetailedDesc = () => {
         </div>
         <div className="inputName">
             <label htmlFor="rating">Rating</label>
-            <span><CiStar /><CiStar /><CiStar /><CiStar /><CiStar /></span>
+            <span><StarRate 
+            value={data.rating}
+            onChange={(e) => {
+              setData({ ...data, rating: e.target.value });
+            }}
+            /></span>
         </div>
         <div className="inputName">
             <label htmlFor="rating">Rating</label>
@@ -132,7 +135,7 @@ const DetailedDesc = () => {
         <button className="subBtn" 
         onClick={(e)=>{
             e.preventDefault()
-            console.log(`Name: ${data.name}; Message: ${data.msg}`)
+            console.log(`Name: ${data.name}; Message: ${data.msg} Rating: ${data.rating}`)
             showHandler()
         }}>Submit</button>
         <button className="closeBtn" 

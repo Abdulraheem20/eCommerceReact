@@ -12,10 +12,9 @@ const attrb = ()=>{
 }
   return (
     <div className="star">
-        <input type="checkbox" className="rating"  onClick={()=>{
-            
-        }} />
+    
       {[...Array(5)].map((_, index) => {
+    
         const ratingValue = index + 1;
 
         return (
@@ -24,6 +23,7 @@ const attrb = ()=>{
             className="star"
               onClick={() => setRating(ratingValue)}
               size={15}
+              key={index}
               style={{
                 color:
                   ratingValue <= (hoverFill || rating) ? "#FFC416" : "#ccc",
