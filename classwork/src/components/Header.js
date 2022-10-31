@@ -11,9 +11,9 @@ const Header = () => {
       <div className="headerBg">
         {/* <Navbarr/> */}
         <div className="col">
-          <h2 className="h3">
+          <h1 className="h1">
             Products for every need, at the distance of a click.
-          </h2>
+          </h1>
         </div>
         <div className="image">
           <img src={leftLayer} alt="img" className="leftLayer" />

@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { CiStar } from "react-icons/ci";
 import "../styles/Shop.css";
 import Checkbox from "../Checkbox";
 import DisplayShop from "../DisplayShop";
 import Goods from "../AvailableProducts";
 import StarRate from "../Star";
+// import StarRa from "../stre";
 
 
 const ShowGoods = (itr, id) => {
@@ -23,10 +24,9 @@ const ShowGoods = (itr, id) => {
     />
   );
 };
-// const images = (itr, id) => {
-//   return <DisplayShop id={id} key={id} />;
-// };
+
 const Shop = () => {
+  const [count, setCount] = useState(0)
   return (
     <div className="colContainer">
       <div className="col1">
@@ -46,29 +46,39 @@ const Shop = () => {
         <div className="ratings">
           <p>Rating Item</p>
           <div className="cont">
-            <input type="checkbox" className="checkbox" />
-          <StarRate/>
-            <small style={{ fontSize: 12, display: "inline" }}>(233)</small>
+            
+          <span 
+          onChange={()=>{
+            setCount(count+1)
+          }}
+          ><StarRate
+          
+          /></span>
+          
+            <small style={{ fontSize: 12, display: "inline" }}>{count}</small>
           </div>
           <div className="cont">
-            <input type="checkbox" className="checkbox" />
+            
             <StarRate/>
-           
+            
             <small style={{ fontSize: 12, display: "inline" }}>(233)</small>
           </div>
           <div className="cont">
-            <input type="checkbox" className="checkbox" />
+            
           <StarRate/>
+        
             <small style={{ fontSize: 12, display: "inline" }}>(233)</small>
           </div>
           <div className="cont">
-            <input type="checkbox" className="checkbox" />
+            
           <StarRate/>
+          
             <small style={{ fontSize: 12, display: "inline" }}>(233)</small>
           </div>
           <div className="cont">
-            <input type="checkbox" className="checkbox" />
+            
           <StarRate/>
+          
             <small style={{ fontSize: 12, display: "inline" }}>(233)</small>
           </div>
         </div>
