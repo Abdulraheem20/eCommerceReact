@@ -38,7 +38,7 @@ const [count, setCount] = useState(0)
     
         );
       })}
-      <small>{rating} </small>
+      {/* <small>{rating} </small> */}
     </div>
   );
 };

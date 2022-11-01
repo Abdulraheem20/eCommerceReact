@@ -1,0 +1,15 @@
+.plsMnsBtn{
+    background-color: #E7E7EF;
+    border: 1px solid #8568FF;
+    width: 20px;
+}
+.plsMnsBtn:hover{
+    background-color: green;
+}
+.addmnsbtncontainer{
+    justify-items: center;
+    justify-content: center;
+}
+.addmnsbtncontainer span{
+    width: 20px;
+}

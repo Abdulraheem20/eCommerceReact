@@ -4,9 +4,10 @@ import { CgProfile } from "react-icons/cg";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { FaRegHeart } from "react-icons/fa";
 import "../components/styles/Navbarr.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Navbarr = () => {
+  const navigate = useNavigate()
   return (
     <div>
       <div className="navbar">
@@ -47,7 +48,10 @@ const Navbarr = () => {
               </form>
               <div className="icons">
                 <CgProfile />
-                <AiOutlineShoppingCart />
+                <AiOutlineShoppingCart 
+                onClick={()=>{
+                  navigate('/ShoppingCart')
+                }}/>
                 <FaRegHeart />
               </div>
             </div>

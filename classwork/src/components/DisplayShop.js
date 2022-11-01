@@ -35,8 +35,8 @@ const DisplayShop = ({
       <span>{icon2}</span>
       <span
         onClick={() => {
-          // navigate("/products" + id);
-          navigate("/shop/" + id);
+          // navigate("/products");
+          navigate("/products/" + id);
         }}
       >
         {icon3}

@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+table,
+/* thead, */
+/* tbody, */
+td, tr,
+th
+ {
+  border-collapse: collapse;
+  padding: 20px;
+  margin: 10px auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.td1 {
+    box-shadow:none;
+  display: flex;
+  gap: 10px;
+  border: none;
+}
+tr{
+    box-shadow: 1px 2px 3px;
+    padding: 10px;
+}
+.cancel{
+    position: relative;
+    top: -45px;
+    left: -10px;
+    color: red;
+    cursor: pointer;
+}
+.remove{
+    display: none;
+    
+}

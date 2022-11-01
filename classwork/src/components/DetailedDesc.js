@@ -65,9 +65,7 @@ const DetailedDesc = () => {
             <div className="ratingReview">
               <div>
                 <StarRate />
-                {/* <span>
-                  <small>(22)</small>
-                </span> */}
+               
               </div>{" "}
               <br />
               <button
