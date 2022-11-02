@@ -9,6 +9,7 @@ import { FaRegHeart } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaTwitterSquare } from "react-icons/fa";
+import Header from "./Header";
 
 const DetailedDesc = () => {
   const { id } = useParams();
@@ -31,6 +32,7 @@ const DetailedDesc = () => {
 
   return (
     <div>
+      <Header/>
       <div className="container1">
         {" "}
         <br /> <br />

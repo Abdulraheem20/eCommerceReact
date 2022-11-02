@@ -47,12 +47,13 @@ const Navbarr = () => {
                 </button>
               </form>
               <div className="icons">
-                <CgProfile />
-                <AiOutlineShoppingCart 
+                <CgProfile className="profileIcon" />
+                <AiOutlineShoppingCart
+                className="cartIcon" 
                 onClick={()=>{
                   navigate('/ShoppingCart')
                 }}/>
-                <FaRegHeart />
+                <FaRegHeart className="heartIcon" />
               </div>
             </div>
           </div>
