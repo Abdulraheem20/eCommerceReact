@@ -5,6 +5,8 @@ import DisplayShop from "../DisplayShop";
 import Goods from "../AvailableProducts";
 import StarRate from "../Star";
 import Header from "../Header";
+import Footer2 from "../Footer2";
+import Navbarr2 from "../Navbarr2";
 
 const ShowGoods = (itr, id) => {
   return (
@@ -27,6 +29,7 @@ const Shop = () => {
   const [count, setCount] = useState(0);
   return (
     <div>
+      <Navbarr2 />
       <Header />
       <div className="colContainer">
         <div className="col1">
@@ -108,6 +111,7 @@ const Shop = () => {
         </div>
         <div className="col2">{Goods.map(ShowGoods)}</div>
       </div>
+      <Footer2 />
     </div>
   );
 };

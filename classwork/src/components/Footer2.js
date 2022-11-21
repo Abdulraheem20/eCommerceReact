@@ -4,21 +4,21 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { FaTwitterSquare } from "react-icons/fa";
 import "../components/styles/Footer.css";
 
-const Footer = () => {
+const Footer2 = () => {
   return (
     <div className="container">
       <div className="theShop">
         <h1>
           The<span className="shop">Shop</span>
         </h1>
-        <form className="email">
+        {/* <form className="email">
           <input
             type="email"
             placeholder="Enter Email Address"
             className="emailInput"
           />
           <button className="signUpBtn">Sign up</button>
-        </form>
+        </form> */}
       </div>
       <div className="categories">
         <h4 style={{color: 'white'}}>Categories</h4> <br />
@@ -73,4 +73,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer2;

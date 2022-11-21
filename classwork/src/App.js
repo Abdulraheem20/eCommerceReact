@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Navbarr from "./components/Navbarr";
 import "./App.css";
-import Header from "./components/Header";
 import ShoppingCartTable from "./components/ShoppingCartTable";
 
 const Home = lazy(() => import("../src/components/pages/Home"));
@@ -19,8 +18,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbarr />
-        {/* <Header /> */}
+        {/* <Navbarr /> */}
         <Suspense fallback={<h1>loading...</h1>}>
           <Routes>
             <Route path="/" exact element={<Home />} />
@@ -33,7 +31,7 @@ function App() {
             <Route path="/ShoppingCart" element={<ShoppingCartTable />} />
           </Routes>
         </Suspense>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </div>
   );

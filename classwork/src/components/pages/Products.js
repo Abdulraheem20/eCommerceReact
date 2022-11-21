@@ -1,13 +1,15 @@
-import React from 'react'
-import DetailedDesc from '../DetailedDesc'
+import React from "react";
+import Footer2 from "../Footer2";
+import Navbarr from "../Navbarr";
 
 const Products = () => {
   return (
     <div>
-      {/* <DetailedDesc/> */}
-        <h1>Products page under construction</h1>
+      <Navbarr />
+      <h1>Products page under construction</h1>
+      <Footer2 />
     </div>
-  )
-}
+  );
+};
 
-export default Products
+export default Products;

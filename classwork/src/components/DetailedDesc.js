@@ -5,11 +5,14 @@ import "./styles/DetailedDesc.css";
 import StarRate from "./Star";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { FaRegHeart } from "react-icons/fa";
-
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaTwitterSquare } from "react-icons/fa";
 import Header from "./Header";
+// import Navbarr2 from "./Navbarr2";
+
+import Footer2 from "./Footer2";
+import Navbarr2 from "./Navbarr2";
 
 const DetailedDesc = () => {
   const { id } = useParams();
@@ -32,7 +35,8 @@ const DetailedDesc = () => {
 
   return (
     <div>
-      <Header/>
+      <Navbarr2 />
+      <Header />
       <div className="container1">
         {" "}
         <br /> <br />
@@ -67,7 +71,6 @@ const DetailedDesc = () => {
             <div className="ratingReview">
               <div>
                 <StarRate />
-               
               </div>{" "}
               <br />
               <button
@@ -212,6 +215,8 @@ const DetailedDesc = () => {
         </div>{" "}
         <br />
       </div>
+      <Footer2 />
+      <div id={show ? "overlay" : "none"}></div>
     </div>
   );
 };

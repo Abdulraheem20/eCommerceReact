@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
+import Footer2 from "./Footer2";
+import Navbarr from "./Navbarr";
 
 const Favorite = () => {
   return (
     <div>
-        
-    </div>
-  )
-}
+      <Navbarr />
 
-export default Favorite
+      <Footer2 />
+    </div>
+  );
+};
+
+export default Favorite;

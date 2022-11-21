@@ -8,6 +8,8 @@ import "../components/styles/ShoppingCart.css";
 import AddMinusBtn from "./AddMinusBtn";
 import { MdCancel } from "react-icons/md";
 import CartTotal from "./CartTotal";
+import Navbarr from "./Navbarr";
+import Footer2 from "./Footer2";
 
 const ShoppingCartTable = () => {
   const [show, setShow] = useState({
@@ -46,6 +48,7 @@ const ShoppingCartTable = () => {
 
   return (
     <div>
+      <Navbarr/>
       <div
         style={{
           margin: "50px",
@@ -188,6 +191,7 @@ const ShoppingCartTable = () => {
         </table>
         <CartTotal />
       </div>
+      <Footer2/>
     </div>
   );
 };

@@ -13,7 +13,17 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #0D0E43;
+  color: #0d0e43;
+}
+.navbar2 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: black;
+  background-color: #8568ff;
+  padding: 20px 10px;
 }
 .row {
   display: flex;
@@ -22,6 +32,9 @@
 .col {
   display: flex;
   justify-content: space-around;
+}
+.NavLink:active{
+  color: #FFFFFF;
 }
 .logo {
   font-family: "Crimson Text", serif;
@@ -35,20 +48,24 @@
 .logo .Shop {
   color: #8568ff;
 }
-.navLinks {
+.logo .Shop2 {
+  color: #FFFFFF;
+}
+.navLinks, .navLinks2  {
   list-style-type: none;
   display: flex;
   gap: 30px;
   margin-top: 10px;
-  
 }
-.navLinks li{
-  color: #0D0E43;
-  
+.navLinks li {
+  color: #0d0e43;
+}
+.navLinks2 li {
+  color: #FFFFFF;
 }
 .icons {
   display: flex;
-  color: #0D0E43;
+  color: #0d0e43;
   gap: 10px;
   margin: 15px 20px;
   position: absolute;
@@ -72,9 +89,20 @@
   top: 15px;
   right: 10px;
 }
-.NavLink{
+.NavLink {
   text-decoration: none;
 }
-.cartIcon, .profileIcon, .heartIcon{
+.cartIcon,
+.profileIcon,
+.heartIcon {
   cursor: pointer;
+}
+.cartIcon2,
+.profileIcon2,
+.heartIcon2 {
+  cursor: pointer;
+  color: #FFFFFF;
+}
+.active{
+  color: white;
 }

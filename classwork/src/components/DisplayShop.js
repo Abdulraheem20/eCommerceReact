@@ -16,37 +16,31 @@ const DisplayShop = ({
   return (
     <div>
       <div className="divContainer">
-          <div className="divLeft">
-          <img src={img} alt="" className="imgs"/>
-          </div>
-          <div className="divRight">
+        <div className="divLeft">
+          <img src={img} alt="" className="imgs" />
+        </div>
+        <div className="divRight">
           <h4>{title}</h4>
-          
-          <div className="price-Rating">
-      <span>{price}</span>
-      <span>
-        {rating} 
-      </span>
 
+          <div className="price-Rating">
+            <span>{price}</span>
+            <span>{rating}</span>
           </div>
-      <p className="text">{briefDesc}</p>
-      <div className="icon">
-      <span>{icon1}</span>
-      <span>{icon2}</span>
-      <span
-        onClick={() => {
-          // navigate("/products");
-          navigate("/products/" + id);
-        }}
-      >
-        {icon3}
-      </span>
-      </div>
-            
+          <p className="text">{briefDesc}</p>
+          <div className="icon">
+            <span>{icon1}</span>
+            <span>{icon2}</span>
+            <span
+              onClick={() => {
+                // navigate("/products");
+                navigate("/products/" + id);
+              }}
+            >
+              {icon3}
+            </span>
           </div>
         </div>
-      
-      
+      </div>
     </div>
   );
 };
