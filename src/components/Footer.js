@@ -59,10 +59,10 @@ const Footer = () => {
       <div className="followUs">
         <h4 style={{color: "white"}}>Follow us</h4>
         <br />
-        <a href="https://web.facebook.com/raimit2">
+        <a href="https://web.facebook.com/raimit2" >
           <FaFacebookSquare style={{ color: "white" }} />
         </a>
-        <a href="https://www.instagram.com/a2z_technology/">
+        <a href="https://www.instagram.com/a2z_technology/" >
           <FaInstagramSquare style={{ color: "white", marginLeft: '10px' }} />
         </a>
         <a href="https://twitter.com/TechnologyA2z">
