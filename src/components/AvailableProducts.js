@@ -4,7 +4,6 @@ import image3 from "../images/Rectangle 32-2.png";
 import image4 from "../images/Rectangle 32-3.png";
 import image5 from "../images/Rectangle 32-4.png";
 import StarRate from "./Star";
-// import { CiStar } from "react-icons/ci";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { FaRegHeart } from "react-icons/fa";
 import { FaSearchPlus } from "react-icons/fa";
@@ -15,8 +14,8 @@ const Goods = [
     title: "Dictum morbi",
     price: "€26.00",
     rating: <StarRate />,
-    color: 'Brown',
-    size: 'XL',
+    color: "Brown",
+    size: "XL",
     briefDesc:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
     icon1: <AiOutlineShoppingCart />,
@@ -33,8 +32,8 @@ const Goods = [
     title: "Morbi sagittis",
     price: "€26.00",
     rating: <StarRate />,
-    color: 'Black',
-    size: 'L',
+    color: "Black",
+    size: "L",
     briefDesc:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
     icon1: <AiOutlineShoppingCart />,
@@ -52,8 +51,8 @@ const Goods = [
     title: "Sodales sit",
     price: "€26.00",
     rating: <StarRate />,
-    color: 'Gold',
-    size: 'M',
+    color: "Gold",
+    size: "M",
     briefDesc:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
     icon1: <AiOutlineShoppingCart />,
@@ -70,8 +69,8 @@ const Goods = [
     title: "Nibh varius",
     price: "€26.00",
     rating: <StarRate />,
-    color: 'Silver',
-    size: 'S',
+    color: "Silver",
+    size: "S",
     briefDesc:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
     icon1: <AiOutlineShoppingCart />,
@@ -88,8 +87,8 @@ const Goods = [
     title: "Mauris quis",
     price: "€26.00",
     rating: <StarRate />,
-    color: '',
-    size: 'XL',
+    color: "",
+    size: "XL",
     briefDesc:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
     icon1: <AiOutlineShoppingCart />,

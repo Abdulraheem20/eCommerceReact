@@ -97,15 +97,15 @@ const DetailedDesc = () => {
             <div className="share">
               <h5 style={{ color: "#151875" }}>Share</h5>
               <span>
-                <a href="">
+                <a href="https://web.facebook.com/raimit2">
                   <FaFacebookSquare style={{ color: "#151875" }} />
                 </a>
-                <a href="">
+                <a href="https://www.instagram.com/a2z_technology/">
                   <FaInstagramSquare
                     style={{ color: "#FB2E86", marginLeft: "10px" }}
                   />
                 </a>
-                <a href="">
+                <a href="https://twitter.com/">
                   <FaTwitterSquare
                     style={{ color: "#151875", marginLeft: "10px" }}
                   />

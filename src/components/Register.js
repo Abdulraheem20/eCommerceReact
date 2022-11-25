@@ -9,7 +9,7 @@ const Register = () => {
     phone: "",
     msg: "",
   });
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   // const [display, setDisplay] = useState("");
   // const data = [];
   return (
@@ -29,7 +29,7 @@ const Register = () => {
               }}
             />
           </div>
-        
+
           <div className="container1">
             <label htmlFor="email">Password</label>
             <input
@@ -59,9 +59,9 @@ const Register = () => {
               // data.push(
               //   `{Username: ${input1}, Email-address: ${input2}, Password: ${input3}, Password: ${input4}}`
               // );
-              {
-                JSON.stringify(data);
-              }
+              // {
+              //   JSON.stringify(data);
+              // }
               // <h2>{JSON.stringify(data)}</h2>
               console.log(data);
               // setDisplay(data)
@@ -69,9 +69,17 @@ const Register = () => {
           >
             Register
           </button>
-          <small className="already">Already have an account? <span onClick={()=>{
-            navigate('./Login')
-          }} className="Login">Login</span></small>
+          <small className="already">
+            Already have an account?{" "}
+            <span
+              onClick={() => {
+                navigate("./Login");
+              }}
+              className="Login"
+            >
+              Login
+            </span>
+          </small>
         </form>
       </div>
     </div>

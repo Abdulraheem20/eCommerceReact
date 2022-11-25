@@ -1,41 +1,32 @@
 import React, { useState } from "react";
 import { BsStarFill } from "react-icons/bs";
-import '../components/styles/DetailedDesc.css'
+import "../components/styles/DetailedDesc.css";
 
 const StarRate = () => {
   const [rating, setRating] = useState(null);
   const [hoverFill, setHoverFill] = useState(null);
 
-
-const [count, setCount] = useState(0)
   return (
     <div className="star">
-    
       {[...Array(5)].map((_, index) => {
-    
         const ratingValue = index + 1;
-        
+
         return (
-          
-       
-            <BsStarFill
+          <BsStarFill
             className="star"
-              onClick={() => {
-                setRating(ratingValue)
-                
-              }}
-              size={15}
-              key={index}
-              onMouseEnter={() => setHoverFill(ratingValue)}
+            onClick={() => {
+              setRating(ratingValue);
+            }}
+            size={15}
+            key={index}
+            onMouseEnter={() => setHoverFill(ratingValue)}
             onMouseLeave={() => setHoverFill(null)}
-              style={{
-                color:
-                  ratingValue <= (hoverFill || rating) ? "#FFC416" : "#ccc",
-              }}
-              onChange={() => setRating(ratingValue)}
-              value={ratingValue}
-            />
-    
+            style={{
+              color: ratingValue <= (hoverFill || rating) ? "#FFC416" : "#ccc",
+            }}
+            onChange={() => setRating(ratingValue)}
+            value={ratingValue}
+          />
         );
       })}
       {/* <small>{rating} </small> */}
@@ -44,10 +35,3 @@ const [count, setCount] = useState(0)
 };
 
 export default StarRate;
-
-
-
-
-
-
-
