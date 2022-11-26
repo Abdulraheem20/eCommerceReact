@@ -14,7 +14,9 @@
   font-size: 16px;
   line-height: 20px;
   color: #0d0e43;
-  background-color: #8568ff;
+}
+.home{
+  background: linear-gradient(180deg, #EAE6FF 0%, rgba(234, 230, 255, 0) 100%);;
 }
 .navbar2 {
   font-family: "Lato", sans-serif;
