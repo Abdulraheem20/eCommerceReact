@@ -47,7 +47,7 @@ const ShoppingCartTable = () => {
   };
 
   return (
-    <div>
+    <div className="bg">
       <Navbarr/>
       <div
         style={{

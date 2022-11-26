@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+.bg{
+    background: linear-gradient(180deg, #EAE6FF 0%, rgba(234, 230, 255, 0) 100%);;
+}
 table,
 /* thead, */
 /* tbody, */
