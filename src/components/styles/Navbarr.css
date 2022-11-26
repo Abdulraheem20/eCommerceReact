@@ -14,6 +14,7 @@
   font-size: 16px;
   line-height: 20px;
   color: #0d0e43;
+  background-color: #8568ff;
 }
 .navbar2 {
   font-family: "Lato", sans-serif;
@@ -33,8 +34,8 @@
   display: flex;
   justify-content: space-around;
 }
-.NavLink:active{
-  color: #FFFFFF;
+.NavLink:active {
+  color: #ffffff;
 }
 .logo {
   font-family: "Crimson Text", serif;
@@ -49,9 +50,10 @@
   color: #8568ff;
 }
 .logo .Shop2 {
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.navLinks, .navLinks2  {
+.navLinks,
+.navLinks2 {
   list-style-type: none;
   display: flex;
   gap: 30px;
@@ -61,7 +63,7 @@
   color: #0d0e43;
 }
 .navLinks2 li {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .icons {
   display: flex;
@@ -101,8 +103,8 @@
 .profileIcon2,
 .heartIcon2 {
   cursor: pointer;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.active{
+.active {
   color: white;
 }
