@@ -48,7 +48,7 @@ const ShoppingCartTable = () => {
 
   return (
     <div className="bg">
-      <Navbarr/>
+      <Navbarr />
       <div
         style={{
           margin: "50px",
@@ -191,7 +191,7 @@ const ShoppingCartTable = () => {
         </table>
         <CartTotal />
       </div>
-      <Footer2/>
+      <Footer2 />
     </div>
   );
 };
