@@ -47,3 +47,9 @@
 
   border-radius: 5px;
 }
+.categories p{
+  cursor: pointer;
+}
+.myAccount p{
+  cursor: pointer;
+}
